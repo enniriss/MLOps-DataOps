@@ -59,10 +59,9 @@ def user_processing():
     @task
     def store_user():
         hook = PostgresHook(postgres_conn_id="postgres")
-        hook.copy_expert(
-            sql="COPY users FROM STDIN WITH CSV HEADER",
-            filename="/tmp/user_info.csv"
-        )
+        #hook.copy_expert(
+        #    sql="COPY users FROM STDIN WITH CSV HEADER",
+        #    filename="/tmp/user_info.csv")
     fake_user = is_api_available()
     user_info = extract_user(fake_user)
     processed = process_user(user_info)
