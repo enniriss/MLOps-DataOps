@@ -11,4 +11,4 @@ jobs:
       - name: Dire bonjour
         run: |
           echo "Bonjour depuis le runner GitHub"
-          ls dags/git push
+          ls dags/
