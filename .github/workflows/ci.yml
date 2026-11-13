@@ -10,5 +10,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Dire bonjour
         run: |
-        echo "Bonjour depuis le runner GitHub"
-        ls dags/
+          echo "Bonjour depuis le runner GitHub"
+          ls dags/git push
